@@ -6,37 +6,37 @@
         <div className="pages">
           <router-link to="/">
             <div class="page">
-              <v-icon>Icon</v-icon>
+              <font-awesome-icon :icon="['fas', 'home']" />
               <p class="arabic">{{arabicPagesNames.home}}</p>
             </div>
           </router-link>
           <router-link to="/water-contracts">
             <div class="page">
-              <i>Icon</i>
+              <font-awesome-icon :icon="['fas', 'water']" />
               <p class="arabic">{{arabicPagesNames.waterContracts}}</p>
             </div>
           </router-link>
           <router-link to="/malfunctions">
             <div class="page">
-              <i>Icon</i>
+              <font-awesome-icon :icon="['fas', 'wrench']" />
               <p class="arabic">{{arabicPagesNames.malfunctions}}</p>
             </div>
           </router-link>
           <router-link to="/responses">
             <div class="page">
-              <i>Icon</i>
+              <font-awesome-icon :icon="['fas', 'reply-all']" />
               <p class="arabic">{{arabicPagesNames.responses}}</p>
             </div>
           </router-link>
           <router-link to="/monthly-readings">
             <div class="page">
-              <i>Icon</i>
+              <font-awesome-icon :icon="['fas', 'file-alt']" />
               <p class="arabic">{{arabicPagesNames.monthlyReadings}}</p>
             </div>
           </router-link>
           <router-link to="/connected-meters">
             <div class="page">
-              <i>Icon</i>
+              <font-awesome-icon :icon="['fas', 'cubes']" />
               <p class="arabic">{{arabicPagesNames.connectedMeters}}</p>
             </div>
           </router-link>
@@ -108,13 +108,11 @@ export default {
     color: var(--second-text);
     padding: 20px;
 }
-
-.page:hover {
-    color: var(--main-text);
+.router-link-active .page{
+  color: var(--main-text);
     font-weight: bold;
 }
-
-.pages .active-page {
+.page:hover {
     color: var(--main-text);
     font-weight: bold;
 }
