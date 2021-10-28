@@ -1,0 +1,52 @@
+:root {
+    --primary: #fff;
+    --secondary: #6145BF;
+    --second-text: #8D8B84;
+    --main-text: #3D4047;
+    --background: #F5F7FB;
+    --shadow: rgba(0, 0, 0, 0.05) 2px 3px 11px;
+    --border-radius: 10px
+  }
+  
+  html {
+      height: 100%;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+      min-height: 100%;
+  }
+  
+  
+  #root, .App, .layout-container {
+      min-height: 100vh;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--second-text);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .arabic {
+      font-family: 'Almarai';
+  }
+
+  .layout-container {
+    display: flex;
+}
