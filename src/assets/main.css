@@ -71,3 +71,19 @@ ul {
   display: flex;
   align-items: center;
 }
+
+.two-charts-container {
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 2%;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .two-charts-container {
+      height: 1000px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+  }
+}
