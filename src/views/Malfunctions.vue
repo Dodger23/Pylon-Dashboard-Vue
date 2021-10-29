@@ -206,19 +206,11 @@ export default {
 }
 
 @media only screen and (max-width: 700px) {
-  .sidebar-container {
-    display: none;
+  .malfunctions-container {
+    height: 1500px;
   }
-
-  .main-content {
-    width: 100%;
-  }
-
-  .main-content {
-    padding: 30px 20px;
-  }
-
   .malfunctions-stats-container {
+    height: 50%;
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(1, 1fr);
@@ -227,7 +219,9 @@ export default {
   .malfunctions-chart {
     height: 80%;
   }
-
+  .malfunctions-chart-container {
+    height: 48%;
+  }
   .chart-title-container h1 {
     font-size: 1.2rem;
   }

@@ -74,10 +74,10 @@ export default {
 }
 
 .monthly-readings-charts div:first-child {
-    width: 70% !important;
+    width: 70%
 }
 .monthly-readings-charts div:last-child {
-    width: 30% !important;
+    width: 30%
 }
 
 @media only screen and (max-width: 1200px) {
@@ -85,25 +85,20 @@ export default {
     .monthly-readings-charts-container {
         max-height: 500px;
     }
+    .monthly-readings-charts div {
+      width: 100% !important;
+    }
     .monthly-readings-container {
-        height: 600px;
+        height: 1100px;
     }
 
     .monthly-readings-charts {
-        height: 80%;
+        height: 100%;
+        width: 100%;
     }
 
     .monthly-readings-charts {
         flex-direction: column;
-    }
-    .monthly-readings-charts div {
-        height: 50% !important;
-    }
-    .monthly-readings-charts div:first-child {
-        width: 100% !important;
-    }
-    .monthly-readings-charts div:last-child {
-        width: 100% !important;
     }
 }
 

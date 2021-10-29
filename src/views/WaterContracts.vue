@@ -50,6 +50,7 @@ export default {
 @media only screen and (max-width: 1200px) {
     .water-contracts-container {
         width: 100%;
+        height: 650px;
     }
 }
 

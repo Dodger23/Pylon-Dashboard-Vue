@@ -3,7 +3,7 @@
    <div class='responses-container'>
       <div class="chart-title-container">
         <h1 class="arabic" style='direction: "rtl'>
-            عقود المياه
+          الردود المحتملة
         </h1>
       </div>
 
@@ -66,10 +66,13 @@ export default {
 }
 
 @media only screen and (max-width: 1200px) {
-    .two-charts-container {
-        height: 1000px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
+  .responses-container{
+    height: 650px;
+  }
+  .two-charts-container {
+      height: 1000px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+  }
 }
 </style>
