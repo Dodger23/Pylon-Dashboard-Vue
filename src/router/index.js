@@ -1,47 +1,34 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import ConnectedMeters from '../views/ConnectedMeters.vue'
-import Malfunctions from '../views/Malfunctions.vue'
-import MonthlyReadings from '../views/MonthlyReadings.vue'
-import Responses from '../views/Responses.vue'
-import WaterContracts from '../views/WaterContracts.vue'
-
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: About
+    component: () => import('../views/Home.vue')
   },
   {
     path: '/connected-meters',
     name: 'Connected-Meters',
-    component: ConnectedMeters
+    component: () => import('../views/ConnectedMeters.vue')
   },
   {
     path: '/malfunctions',
     name: 'Malfunctions',
-    component: Malfunctions
+    component: () => import('../views/Malfunctions.vue')
   },
   {
     path: '/monthly-readings',
     name: 'Monthly-Readings',
-    component: MonthlyReadings
+    component: () => import('../views/MonthlyReadings.vue')
   },
   {
     path: '/responses',
     name: 'Responses',
-    component: Responses
+    component: () => import('../views/Responses.vue')
   },
   {
     path: '/water-contracts',
     name: 'Water-Contracts',
-    component: WaterContracts
+    component: () => import('../views/WaterContracts.vue')
   }
 ]
 
