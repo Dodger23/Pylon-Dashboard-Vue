@@ -56,3 +56,18 @@ ul {
   background-color: var(--background);
   padding: 40px 100px;
 }
+
+.chart-title-container {
+  width: 90%;
+  margin: 0 auto 20px;
+  direction: rtl;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--second-text);
+}
+
+.vue-apexcharts {
+  display: flex;
+  align-items: center;
+}
