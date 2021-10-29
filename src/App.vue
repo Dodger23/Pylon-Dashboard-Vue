@@ -2,13 +2,15 @@
   <Navbar />
   <div class="layout-container">
     <sidebar />
+    <div class="main-content">
+      <router-view/>
+    </div>
   </div>
-  <router-view/>
 </template>
 
 <script>
 import Navbar from '@/components/Navbar.vue'
-import Sidebar from './components/Sidebar.vue'
+import Sidebar from '@/components/Sidebar.vue'
 export default {
   name: 'App',
   components: {
